@@ -8,7 +8,7 @@ import numpy as np
 model = EfficientNetB0(weights='imagenet')
 
 # Прописываем путь к файлу с изображением
-img_path = 'plane.png'
+img_path = 'plane2.png'
 # Загружаем изображение в память
 # EfficientNetB0 рассчитана на изображения размером 224х224
 img = image.load_img(img_path, target_size=(224, 224))
