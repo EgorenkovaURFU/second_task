@@ -28,7 +28,7 @@ st.title('Классификация изображений')
 # Вызываем функцию создания формы загрузки изображения
 img = load_image()
 
-@st.cache_data(allow_output_mutation=True)
+@st.cache_data
 def load_model():
     model = EfficientNetB0(weights='imagenet')
     return model
@@ -48,7 +48,7 @@ def print_predictions(preds):
         st.write(cl[1], cl[2])
 
 
-@st.cache_data(allow_output_mutation=True)
+@st.cache_data
 def run():
     # Загружаем предварительно обученную модель
     model = load_model()
