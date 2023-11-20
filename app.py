@@ -8,6 +8,7 @@ import streamlit as st
 from PIL import Image
 
 
+@st.cache_data
 def load_image():
     """Создание формы для загрузки изображения"""
     # Форма для загрузки изображения средствами Streamlit
@@ -26,7 +27,7 @@ def load_image():
 # Выводим заголовок страницы средствами Streamlit     
 st.title('Классификация изображений')
 # Вызываем функцию создания формы загрузки изображения
-img = load_image()
+#img = load_image()
 
 @st.cache_data
 def load_model():
