@@ -48,6 +48,7 @@ def print_predictions(preds):
         st.write(cl[1], cl[2])
 
 
+@st.cache_data
 def run():
     # Загружаем предварительно обученную модель
     model = load_model()
