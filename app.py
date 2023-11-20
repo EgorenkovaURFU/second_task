@@ -8,7 +8,6 @@ import streamlit as st
 from PIL import Image
 
 
-@st.cache_data
 def load_image():
     """Создание формы для загрузки изображения"""
     # Форма для загрузки изображения средствами Streamlit
